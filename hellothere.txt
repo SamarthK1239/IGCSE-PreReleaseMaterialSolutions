@@ -1,0 +1,45 @@
+START
+
+priceAfter16 <- 2
+priceSunday <- 2
+priceSaturday <- 3
+priceOtherDays <-   10
+dayOver <- 'n'
+
+totalDailyPayment <- 0
+
+OUTPUT "Enter the day"
+INPUT day
+
+WHILE (!(day = "Sunday") AND !(day = "Monday") AND !(day = "Tuesday") AND !(day = "Wednesday") AND !(day = "Thursday") AND !(day = "Friday") AND !(day = "Saturday") DO
+    OUTPUT "THE DAY ENTERED IS NOT VALID. PLEASE ENTER AN APPROPRIATE DAY"
+    INPUT day
+ENDWHILE
+
+WHILE dayOver != 'y' DO
+    pricePH <- 0
+    discount <- 1
+    totalPrice <- 0
+    
+    OUTPUT "ENTER THE TIME"
+    INPUT time
+    
+    WHILE time < 8 OR time > 23 DO
+        OUTPUT "THE TIME ENTERED IS INVALID. PLEASE ENTER A NUMBER BETWEEN 8 AND 23 ONLY"
+        INPUT time
+    ENDWHILE
+ENDWHILE
+
+OUTPUT "ENTER THE NUMBER OF HOURS THE CAR IS GOING TO BE LEFT FOR"
+INPUT hours
+
+IF hours > 16 THEN
+    IF day = "Sunday" THEN
+        WHILE hours < 1 OR hours > 8 DO
+            OUTPUT "THE NUMBER OF HOURS ENTERED IS INCORRECT. PLEASE ENTER A NUMBER FROM 1 TO 8"
+            INPUT hours
+        ENDWHILE
+    pricePH <- priceSunday
+    
+    ELSE IF day = "Saturday" THEN
+        
