@@ -1,0 +1,277 @@
+PRINT (‘What day is it today?’)
+INPUT day
+
+sum = 0
+
+WHILE (day =! “sunday” OR “monday” OR “tuesday” OR “wednesday” OR “thursday” OR “friday” OR “saturday”)
+    PRINT (‘Invalid data entry, please enter the whole day avoiding caps.’)
+    INPUT day
+ENDWHILE
+
+IF day = “sunday” THEN
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+
+    WHILE (arrival >= 24 AND arrival <  8) DO
+    PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+    PRINT(‘Enter arrival time’)
+    INPUT arrival
+    ENDWHILE
+
+    IF (arrival > 7  AND arrival <= 16) THEN
+        PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+        INPUT stay
+        WHILE (stay  > 8) DO
+        PRINT(“Max stay in time is 8 hrs, please enter the stay in time to be less than 8hrs”)
+        INPUT stay
+    ENDIF
+
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 2 + 2
+ELSE
+    Price = stay * 2
+ENDIF
+
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+ELSE IF (day = “monday”) THEN
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+    WHILE (arrival >= 24 AND arrival <  8) DO
+    PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+    PRINT(‘Enter arrival time’)
+    INPUT arrival
+ENDIF
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 2) DO
+    PRINT(“Max stay in time is 2 hrs, please enter the stay in time to be less than 2hrs”)
+    INPUT stay
+ENDIF
+
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 10 + 2
+ELSE
+    Price = stay * 10
+ENDIF
+
+PRINT(“Cost is 2$”)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+ELSE IF (day = “tuesday”) THEN
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+WHILE (arrival >= 24 AND arrival <  8) DO
+    PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+    PRINT(“Enter arrival time”)
+    INPUT arrival
+ENDWHILE
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 2) DO
+    PRINT(“Max stay in time is 2 hrs, please enter the stay in time to be less than 2hrs”)
+    INPUT stay
+END
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 10 + 2
+ELSE
+    Price = stay * 10
+ENDIF
+
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+ELSE IF (day = “wednesday”) THEN
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+    WHILE (arrival >= 24 AND arrival <  8) DO
+        PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+        PRINT(‘Enter arrival time’)
+        INPUT arrival
+    ENDWHILE
+ENDIF
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 2) DO
+        PRINT(“Max stay in time is 2 hrs, please enter the stay in time to be less than 2hrs”)
+        INPUT stay
+    END
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 10 + 2
+ELSE
+    Price = stay * 10
+ENDIF 
+
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+ELSE IF  (day = ‘thursday’) THEN
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+    WHILE (arrival >= 24 AND arrival <  8) DO
+        PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+        PRINT(‘Enter arrival time’)
+        INPUT arrival
+    ENDWHILE
+ENDIF
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 2) DO
+        PRINT(“Max stay in time is 2 hrs, please enter the stay in time to be less than 2hrs”)
+        INPUT stay
+    ENDWHILE
+    
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 10 + 2
+ELSE
+    Price = stay * 10
+ENDIF
+ 
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+ELSE IF (day = “friday”)
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+    WHILE (arrival >= 24 AND arrival <  8) DO
+    PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+    PRINT(‘Enter arrival time’)
+    INPUT arrival
+ENDIF
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 2) DO
+        PRINT(“Max stay in time is 2 hrs, please enter the stay in time to be less than 2hrs”)
+        INPUT stay
+    ENDWHILE
+ENDIF    
+
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 10 + 2
+ELSE
+    Price = stay * 10
+ENDIF
+
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+IF (day = “saturday”)
+    PRINT(‘Enter the time of arrival as a whole number’)
+    INPUT arrival
+ENDIF
+
+WHILE (arrival >= 24 AND arrival <  8) DO
+    PRINT(“Invalid time entered, car cannot be parked between midnight and 8”)
+    PRINT(‘Enter arrival time’)
+    INPUT arrival
+ENDWHILE
+
+IF (arrival > 7  AND arrival <= 16) THEN
+    PRINT(‘PLEASE INPUT THE NUMBER OF HRS THAT YOU WANT TO  PARK THE CAR FOR’)
+    INPUT stay
+    WHILE (stay  >= 4) DO
+        PRINT(“Max stay in time is 4 hrs, please enter the stay in time to be less than 4hrs”)
+        INPUT stay
+    ENDWHILE
+ENDIF
+
+leaving = stay + arrival
+
+IF (leaving > 16) THEN
+    Time_after_4 = leaving - 16
+    Time_bef_4  =  stay - time_after_4
+    Price = Time_bef_4 * 3 + 2
+ELSE
+    Price = stay * 3
+ENDIF
+
+PRINT(‘Cost is 2$’)
+PRINT(‘Enter the time you leave’)
+INPUT leaving
+
+WHILE (leaving > 24 OR leaving  < 17) DO
+    PRINT(‘Invalid, you cannot park after midnight’)
+    INPUT leaving
+ENDWHILE
+
+PRINT (“Do you have a code, you can avail offers.”)
+INPUT ans
+IF (ans = “yes”) THEN
+    PRINT(‘Please enter the discount code if you want to  avail an offer’)
+    INPUT code
+    Code_1 = code.charAt(0)
+    Code_2 = code.charAt(1)
+    Code_3 = code.charAt(2)
+    Code_4 = code.charAt(3)
+ENDIF
+
+STOP
